@@ -1,0 +1,127 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Landing Page Styles */
+.landing-header {
+  color: #1C355E;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.landing-content {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-section, .how-it-works-section, .features-section, .testimonials-section, .faq-section {
+  background-color: white;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+blockquote footer {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+}
+
+/* Form Styles */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.landing-header img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: logoAnimation 1s ease-in-out;
+}
+
+/* Chyp in Action Styles */
+.about-section h2, .how-it-works-section h2, .features-section h2, .testimonials-section h2, .chyp-in-action-section h2, .faq-section > h2 {
+  color: #1C355E;
+  border-bottom: 2px solid #235D37;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.chyp-action-img {
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 65%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.chyp-in-action-section p {
+  color: #1C355E;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.h3.mb-3.fw-normal, .h4.mb-4.fw-normal {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #235D37;
+  text-align: center;
+}
+
+.form-floating {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-top: 10px;
+  background-color: #235D37;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #1C355E;
+}
+
+/* Logo Animation */
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(-20px) rotateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg);
+    opacity: 1;
+  }
+}
