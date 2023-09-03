@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 // Define a route for the home directory
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "signup.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 // Handle form submission
